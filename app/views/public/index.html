@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<!--[if IE 7 ]>    <html lang="en-gb" class="isie ie7 oldie no-js"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en-gb" class="isie ie8 oldie no-js"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en-gb" class="isie ie9 no-js"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en-gb" xml:lang="en-gb" class="no-js"> <!--<![endif]-->
+
+<head>
+	<meta charset="utf-8">
+	<!--[if lt IE 9]> 
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <![endif]-->
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+	<meta name="description" content="<!--{loop:seo_city}-->Imóveis em <!--{seo_city.categoria_title}-->,  <!--{end:seo_city}--> [config_site_description]" />
+    <meta name="author" content="Change Imóveis">
+    <meta name="robots" content="index, follow">
+	<meta name="viewport" content="width=device-width, initial-scale=1">    
+    
+    <link rel="icon" href="assets/images/icon.png" type="image/png">
+	
+	<!--[if lt IE 9]>
+        <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+   
+    <!-- Google Fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700,500,400italic,500italic%7CMontserrat:400,700' rel='stylesheet' type='text/css'> 
+
+	<!--[if IE 7]>
+		<link rel="stylesheet" href="font-awesome/font-awesome/css/font-awesome-ie7.min.css" type="text/css">
+    <![endif]-->	
+    
+    <!-- Icon-Font -->
+    <link rel="stylesheet" href="assets/font-awesome/font-awesome/css/font-awesome.min.css" type="text/css"> 
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="assets/stroll/stroll.min.css" type="text/css">
+    <link rel="stylesheet" href="assets/owl-carousel/owl.carousel.css" type="text/css">
+    <link rel="stylesheet" href="assets/styles/animate.min.css" type="text/css">
+    <link rel="stylesheet" href="assets/styles/main.css" type="text/css">
+	
+	<script type="text/javascript" src="assets/js/modernizr.js"></script>
+
+	<title>[config_site_title]</title>
+	
+</head>
+
+<body>
+	<div id="page-loader">
+    	<div class="centered-columns">
+        	<div class="centered-column">
+            	<img alt="loader" src="assets/images/loader.gif">
+            </div>
+        </div>
+    </div>
+
+	<header id="header-section">
+    	<div class="main-menu">
+    		<div class="container">
+            	<img class="pull-left main-logo" alt="[config_site_title]" src="assets/images/logo.png" href="[baseUri]" />
+                <div class="menu-button"><i class="fa fa-reorder"></i></div>
+                <nav class="menu-container underscore-container menu-container-fade">
+                    <ul>
+                        <li class="active"><a href="#home">Home</a></li>
+						<li><a href="#busca">Encontre seu imóvel</a></li>
+						<li><a href="#citation-section">O que fazemos?</a></li>
+						<li><a href="#destaque">Imóveis</a></li>
+                        <li><a href="#corretores">Corretores</a></li>	
+                        <li><a href="#contact">Contato</a></li>
+                    </ul>
+                    <div class="underscore"><div class="underscore-inner"></div></div>
+                </nav>
+        	</div><!-- .container -->
+        </div><!-- .main-menu -->
+    </header>
+    
+	<section id="">
+        <div class="slide-1 bg-image bg-pattern">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6 pull-right">
+						<div class="slide-box">
+						</div>
+					</div>
+				</div>
+			</div><!-- .container -->
+		</div><!-- .slide-1 -->
+    </section>
+
+	<section>
+    	<div class="section-content" id="busca">
+        	<div class="container">
+            	<div class="section-header onscroll-animate" data-animation="fadeInLeft">
+        			<h1>Busca por código</h1>
+                    <h4>Sabe o código do imóvel? Excelente! Digite no campo abaixo e localize o imóvel sonhado.</h4>
+        		</div>
+				<form role="search" id="busca-ref onscroll-animate" data-animation="fadeInLeft" action="[baseUri]/index/busca/" method="post">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="row">
+								<div class="col-sm-12">
+									<h2>Código do Imóvel</h2>
+									<input type="text" placeholder="Informe o código do Imóvel" id="busca" name="busca" required  />
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="row">
+								<div class="col-sm-3">
+									<h2>.</h2>
+									<p class="text-center onscroll-animate" data-animation="flipInY"><input type="submit" id="btn-busca-ref" class="button-void button-long" value="Buscar"></input></p>						
+								</div>
+							</div>
+						</div>
+					</div>
+				</form>
+				<div class="section-header onscroll-animate" data-animation="fadeInLeft">
+        			<h1>Busca Avançada</h1>
+                    <h4>Procurando um bom lugar para morar? Tenho certeza que nosso mecanismo avançado de busca vai lhe ajudar.</h4>
+        		</div>		
+                <form id="search" class="form panel-busca onscroll-animate" data-animation="fadeInLeft" action="[baseUri]/index/buscaavancada/" method="post">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="row">
+								<div class="col-sm-12">
+									<h2>Transação</h2>
+									<select class="sel-custom form-control" name="finalidade" id="finalidade">
+										<option value="0">Selecione a Transação</option>
+										<option value="1">Venda</option>
+										<option value="2">Locação</option>
+										<option value="4">Temporada</option>
+									</select>	
+								</div>
+							</div><!-- .row -->
+						</div><!-- .col-md-6 -->
+						<div class="col-md-6">
+							<div class="row">
+								<div class="col-sm-6">
+									<h2>Cidade</h2>
+									<select name="cidade" id="cidade" class="sel-custom form-control">
+									<option value="0">Selecione a Cidade</option>
+										<!--{loop:catb}-->
+										<!--{ <option value="catb.categoria_id" name="catb.categoria_url">catb.categoria_title</option>}-->
+										<!--{end:catb}-->    
+									</select>
+								</div>
+								<div class="col-sm-6">
+									<h2>Bairro</h2>
+									<select class="sel-custom form-control" name="bairro" id="bairro" disabled>
+										<option value="0">Selecione o Bairro</option>
+									</select>
+								</div>
+							</div><!-- .row -->
+						</div><!-- .col-md-6 -->
+					</div><!-- .row -->
+					<br/>
+					<div class="row">
+						<div class="col-md-6">
+							<div class="row">
+								<div class="col-sm-12">
+									<h2>Tipo</h2>
+									<select class="sel-custom form-control" name="tipo" id="tipo">
+										<option value="0">Selecione o Tipo</option>	
+										<!--{loop:tpb}-->
+										<!--{ <option value="tpb.tipo_id" name="tpb.tipo_url">tpb.tipo_title</option>}-->
+										<!--{end:tpb}-->
+									</select>
+								</div>
+							</div><!-- .row -->
+						</div><!-- .col-md-6 -->
+						<div class="col-md-6">
+							<div class="row">
+								<div class="col-sm-6 valor_venda">
+									<h2>Valor</h2>
+									<select class="sel-custom form-control" name="valormax" id="valormax">
+										<option value="0">Selecione o Valor de Venda</option>
+										<option value="4000">Indiferente</option>
+										<option value="90000">Até 90.000</option>
+										<option value="200000">Até 200.000</option>
+										<option value="300000">Até 300.000</option>
+										<option value="500000">Até 500.000</option>
+										<option value="1000000">1 milhão ou mais</option>
+									</select>
+								</div>
+								<div class="col-sm-6 valor_locacao">
+									<h2>Valor</h2>
+									<select class="sel-custom form-control" name="valormax" id="valormax">
+										<option value="0">Selecione o Valor de Locação</option>
+										<option value="0">Indiferente</option>
+										<option value="5000">Até 500</option>
+										<option value="1000">Até 1.000</option>
+										<option value="2000">Até 2.000</option>
+										<option value="50000">Até 5.000</option>
+										<option value="100000">Até 10.000</option>
+									</select>
+								</div>
+								<div class="col-sm-6">
+									<h2>Quartos</h2>
+									<select class="sel-custom form-control" name="dorms" id="dorms">
+										<option value="0">Selecione o Quarto</option>
+										<option value="0">Indiferente</option>
+										<option value="1">1 dormitório</option>
+										<option value="2">2 dormitórios</option>
+										<option value="3">3 dormitórios</option>
+										<option value="4">4 dormitórios</option>
+										<option value="5">5 ou mais</option>
+									</select>
+								</div>
+							</div>
+						</div><!-- .col-md-6 -->
+						<p>.</p>
+						<div class="text-center onscroll-animate" data-animation="flipInY">
+							<input type="submit" class="button-void button-long" id="btn-busca" value="Buscar"></input>
+						</div>
+					</div><!-- .row -->               
+				</form>
+			</div><!-- .container -->
+		</div><!-- .section-content -->
+  	</section>
+    
+	<section id="citation-section" class="section-contrast">
+    	<div class="bg-image bg-pattern bg-cover parallax-background">
+            <div class="section-content onscroll-animate" data-animation="fadeInUp">
+				<div class="section-content">
+					<div class="container">
+						<div class="section-header onscroll-animate" data-animation="fadeInLeft">
+							<h1>O que fazemos?</h1>
+							<h4>Conheça um pouco das nossas atividades imobiliárias.</h4>
+						</div>
+						<div class="row">
+							<div class="col-md-6">
+								<div class="row">
+									<div class="col-sm-6 onscroll-animate" data-animation="fadeInUp">
+										<div class="icon-box">
+											<div class="icon-box-icon">
+												<i class="fa fa-signal"></i>
+											</div>
+											<h3>Equipe Profissional</h3>
+											<p>Many whalemen have a method of absorbing it into some other substance, and then partaking of it.</p>
+											<div class="read-more-link-container">
+												<a href="[baseUri]" class="read-more-link">Conheça</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-6 onscroll-animate" data-delay="400" data-animation="fadeInUp">
+										<div class="icon-box">
+											<div class="icon-box-icon">
+												<i class="fa fa-home"></i>
+											</div>
+											<h3>Imóveis à venda</h3>
+											<p>Many whalemen have a method of absorbing it into some other substance, and then partaking of it.</p>
+											<div class="read-more-link-container">
+												<a href="[baseUri]/index/buscaavancada/finalidade/1/" class="read-more-link">Conheça</a>
+											</div>
+										</div>
+									</div>
+								</div><!-- .row -->
+							</div><!-- .col-md-6 -->
+							<div class="col-md-6">
+								<div class="row">
+									<div class="col-sm-6 onscroll-animate" data-delay="600" data-animation="fadeInUp">
+										<div class="icon-box">
+											<div class="icon-box-icon">
+												<i class="fa fa-building"></i>
+											</div>
+											<h3>Imóveis para locação</h3>
+											<p>Many whalemen have a method of absorbing it into some other substance, and then partaking of it.</p>
+											<div class="read-more-link-container">
+												<a href="[baseUri]/index/buscaavancada/finalidade/2/" class="read-more-link">Conheça</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-6 onscroll-animate" data-delay="800" data-animation="fadeInUp">
+										<div class="icon-box">
+											<div class="icon-box-icon">
+												<i class="fa fa-th"></i>
+											</div>
+											<h3>Imóveis Especiais</h3>
+											<p>Many whalemen have a method of absorbing it into some other substance, and then partaking of it.</p>
+											<div class="read-more-link-container">
+												<a href="[baseUri]" class="read-more-link">Conheça</a>
+											</div>
+										</div>
+									</div>
+								</div><!-- .row -->
+							</div><!-- .col-md-6 -->
+						</div><!-- .row -->
+					</div><!-- .container -->
+				</div><!-- .section-content -->
+            </div>
+       	</div>
+    </section>
+
+	<!-- Inicio Listagem Destaques -->
+	<section id="destaque">
+    	<div class="section-content">
+        	<div class="container">
+            	<div class="section-header onscroll-animate" data-animation="fadeInLeft">
+        			<h1>Imóveis em Destaque</h1>
+                    <h4>As melhores ofertas para você.</h4>
+        		</div>
+				<!--{loop:i}-->
+					<!--{<div class="item-box">}-->
+						<!--{<div class="col-xs-12 col-sm-10 col-lg-4 col-md-4">}-->
+							<!--{<div class="post-preview">}-->
+								<!--{<a href="[baseUri]/imovel/i.categoria_url/i.sub_url/i.item_id/">}-->
+									<!--{<section>}-->
+										<!--{<div class="post-preview-img">}-->
+											<!--{<div class="post-preview-img-inner">}-->
+												<!--{<img alt="i.tipo_title em i.sub_title - i.categoria_title por i.item_preco" title="i.tipo_title em i.sub_title - i.categoria_title por i.item_preco" src="[baseUri]/thumb/i.foto_url/336/200/crop/">}-->
+											<!--{</div>}-->
+											<!--{<div class="post-preview-label">Para i.item_finalidade</div>}-->										
+											<!--{<div class="post-preview-label-alt-wrapper">}-->
+													<!--{<div class="post-preview-label-alt">i.item_promo</div>}-->
+                                            <!--{</div>}-->
+										<!--{</div>}-->
+									<!--{</section>}-->	
+								<!--{</a>}-->
+								<!--{<div class="post-preview-content">}-->
+                                    <!--{<h2 class="post-preview-heading">i.tipo_title - i.sub_title</h2>}-->
+                                    <!--{<div class="post-preview-price-container">}-->
+										<!--{<a href="[baseUri]/imovel/i.categoria_url/i.sub_url/i.item_id/" class="read-more-link-alt">Saiba Mais</a>}-->
+										<!--{<p class="listing-price"> R$ i.item_preco</p>}-->										
+									<!--{</div>}-->
+									<!--{<div class="post-preview-detail">}-->
+                                        <!--{<a>i.item_area m²</a> <span class="delimiter-inline-alt"></span> <a>i.item_dorm dormitório(s)</a> <span class="delimiter-inline-alt"></span> <a>i.item_wc banheiro(s)</a> <span class="delimiter-inline-alt"></span> <a>i.item_vaga vaga(s)</a>}-->
+                                    <!--{</div>}-->
+								<!--{</div>}-->
+							<!--{</div>}-->
+						<!--{</div>}-->
+					<!--{</div>}-->
+                <!--{end:i}-->
+            </div><!-- .container -->
+        </div><!-- .section-content -->
+    </section>
+    
+    <div class="margin-30 visible-lg-block visible-md-block"></div>
+	     
+	<section id="contact">
+    	<div class="section-content">
+        	<div class="container">
+            	<div class="section-header onscroll-animate" data-animation="fadeInLeft">
+        			<h1>Vamos conversar?</h1>
+                    <h4>Disponibilizamos diversas maneiras para entrar em contato.</h4>
+        		</div>
+                <div class="row">
+                	<div class="col-md-4 onscroll-animate">
+                    	<div class="clearfix">
+                    		<img class="img-inline logo-style3" alt="hometastic" src="assets/images/logo3.png"> <span class="heading-small-inline">[config_site_title]</span>
+                        </div>
+                        <hr>
+                        
+                        <h6 class="heading-small-inline">Sobre</h6>
+                        <p>[config_site_about]</p>
+                        
+                        <div class="margin-10"></div>
+                        <div class="text-bigger">
+                            <div class="icon-opening-wrapper">
+                                <div class="icon-opening-container">
+                                    <div class="icon-opening"><i class="fa fa-phone"></i></div>
+                                    <div class="icon-opening-content">[cliente_telefone1]</div>
+                                </div>
+                            </div>
+                            <div class="icon-opening-wrapper">
+                                <div class="icon-opening-container">
+                                    <div class="icon-opening"><i class="fa fa-mobile-phone text-big"></i></div>
+                                    <div class="icon-opening-content">[cliente_telefone2]</div>
+                                </div>
+                            </div>
+                            <div class="icon-opening-wrapper">
+                                <div class="icon-opening-container">
+                                    <div class="icon-opening"><i class="fa fa-envelope-alt"></i></div>
+                                    <div class="icon-opening-content">
+                                        [smtp_username]<br>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="margin-40"></div>
+                    </div><!-- .col-md-4 -->
+                    <div class="col-md-8 onscroll-animate" data-delay="400">
+                    	<form class="form-contact-full" id="contact-form" action="send_email_contact.php" method="post" data-name-not-set-msg="Name is required" data-message-not-set-msg="Message is required" data-email-not-set-msg="Email is required" data-ajax-fail-msg="Ajax could not set the request" data-success-msg="Email successfully sent.">
+                            <div class="row">
+                            	<div class="col-xs-6">
+                                	Full Name
+                                	<input type="text" name="name" placeholder="Name goes here">
+                                    Website
+                                	<input type="text" name="website" placeholder="Your personal web if you have one">
+                                </div>
+                                <div class="col-xs-6">
+                                	Email
+                                	<input type="text" name="email" placeholder="Your Email">
+                                   	Mobile Phone
+                                	<input type="text" name="phone" placeholder="Mobile Phone Number">
+                                </div>
+                            </div>
+                            Message
+                            <textarea name="message" placeholder="Express your thaugts"></textarea>
+                            <p class="return-msg"></p>
+                            <div class="text-right">
+                                <div class="form-contact-full-submit">
+                                    <input type="submit" value="Send Message">
+                                </div>
+                          	</div>
+                        </form>
+                    </div><!-- .col-md-4 -->
+                </div><!-- .row -->
+            </div><!-- .container -->
+        </div><!-- .section-content -->
+    </section>
+	
+	<section>
+    	<div class="margin-10"></div>
+        <!-- Google Map -->
+        <div class="google-map-container">
+            <div class="google-map">
+                <div id="map-canvas"></div>
+            </div>
+        </div>
+        <!-- /Google Map -->
+  		<div class="margin-10"></div>
+    </section>
+	
+	
+	<section>
+    	<div class="bg-buildings">
+            <div class="container-big section-content bg-logo">
+                <div class="container clearfix">
+                    <div class="big-notice onscroll-animate">
+                        <h3><span class="text-uppercase"></span> Gostou do modelo? Essa é uma das aplicações feitas sob medida para seu negócio.</h3>
+                        <div class="onscroll-animate pull-right" data-delay="700" data-animation="flipInY">
+                        	<div class="button-container"><a class="button" href="m">Solicite um orçamento</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>		
+    
+	<footer id="footer-section">
+    	<a href="#header-section" class="scroll-to" id="to-top"></a>
+    	<div class="container footer-info">
+        	<div class="row">
+            	<div class="col-md-6">
+                    <div class="row">
+                        <div class="col-sm-6 footer-column onscroll-animate">
+                            <h4><img alt="Hometastic" src="assets/images/logo.png"></h4>
+                            <p>[config_site_about]</p>
+                        </div>
+                    </div><!-- .row -->
+                </div><!-- .col-md-6 -->
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-sm-6 footer-column font-normal onscroll-animate" data-delay="600">
+                            <h4>Informações de Contato</h4>
+                            <div class="icon-opening-wrapper">
+                                <div class="icon-opening-container">
+                                    <div class="icon-opening"><i class="fa fa-phone"></i></div>
+                                    <div class="icon-opening-content"> [cliente_telefone1]</div>
+                                </div>
+                            </div>
+                            <div class="icon-opening-wrapper">
+                                <div class="icon-opening-container">
+                                    <div class="icon-opening"><i class="fa fa-envelope"></i></div>
+                                    <div class="icon-opening-content"> [smtp_username]</div>
+                                </div>
+                            </div>
+                            <div class="icon-opening-wrapper">
+                                <div class="icon-opening-container">
+                                    <div class="icon-opening"><i class="fa fa-globe"></i></div>
+                                    <div class="icon-opening-content">[cliente_rua], Nº [cliente_num], [cliente_bairro] - [cliente_cidade] / [cliente_uf]</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- .row -->
+                </div><!-- .col-md-6 -->
+            </div><!-- .row -->
+        </div><!-- .container -->
+        <div class="main-menu-alt">
+        	<div class="container">
+                <div class="menu-button"><i class="fa fa-reorder"></i></div>
+                <nav id="bottom-menu" class="menu-container menu-container-slide">
+                	<div class="underscore-container">
+                    <ul>
+                        <li class="active"><a href="#home">Home</a></li>
+						<li><a href="#busca">Busca</a></li>
+						<li><a href="#destaque">Imóveis em Destaque</a></li>
+                        <li><a href="#corretores">Corretores</a></li>
+                        <li><a href="#contact">Contato</a></li>
+                    </ul>
+                    <div class="underscore"><div class="underscore-inner"></div></div>
+                	</div>
+                </nav>
+            </div><!-- .container -->
+      	</div><!-- .main-menu-alt -->
+        <div class="site-info">
+        	<div class="container">
+                <div class="row">
+                    <div class="col-xs-6 onscroll-animate" data-animation="fadeInLeft">
+                        <p>2016 Todos os direitos reservados. Desenvolvido por <a title="Change" href="http://www.changesolucoes.com"><em>Change Soluções</em></a></p>
+                    </div>
+                    <div class="col-xs-6 text-right onscroll-animate" data-animation="fadeInRight">
+                    	<div class="socials-wrapper">
+                            <div class="social-round-container">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                            </div>
+                            <div class="social-round-container">
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                            </div>
+                            <div class="social-round-container">
+                                <a href="#"><i class="fa fa-rss"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- .row -->
+            </div><!-- .container -->
+        </div><!-- .site-info -->
+    </footer>
+	
+	<script type="text/javascript" src="assets/js/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="js/jquery/bootstrap/bootstrap.min.js"></script>	
+    <script type="text/javascript" src="assets/owl-carousel/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="assets/stroll/stroll.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.scrollTo.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.stellar.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.inview.min.js"></script>
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+	<script type="text/javascript" src="assets/js/jquery.nicescroll.js"></script>    
+	<script type="text/javascript" src="assets/js/custom.js"></script>
+	
+<script>
+	$(function(){ 	
+			[onload]
+	})
+		
+	$(document).ready(
+	  function() { 
+		$("html").niceScroll({cursorcolor:"#7D7D82"});
+	  }
+	);
+		
+</script>
+
+</body>
+</html>
