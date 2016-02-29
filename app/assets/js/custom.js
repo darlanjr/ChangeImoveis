@@ -59,15 +59,14 @@ $(document).ready(function(e) {
 		slideSpeed: 500
 	});
 	
-	//Scroll das páginas
+
 	
-	$("nav").find("a").click(function(e) {
-    e.preventDefault();
-    var section = $(this).attr("href");
-    $("html, body").animate({
-        scrollTop: $(section).offset().top
-    });
-	});
+	//Barra de rolagem na lateral customizada.
+	$(document).ready(
+	  function() { 
+		$("html").niceScroll({cursorcolor:"#7D7D82"});
+	  }
+	);
 	
 	
 	//Altera faixa preços quando selecionado venda / locacao.

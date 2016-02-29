@@ -1,0 +1,43 @@
+<section id="destaque">
+	<div class="section-content">
+		<div class="container">
+			<div class="section-header onscroll-animate" data-animation="fadeInLeft">
+				<h1>Imóveis em Destaque</h1>
+				<h4>As melhores ofertas para você.</h4>
+			</div>
+			<!--{loop:i}-->
+				<!--{<div class="col-xs-12 col-sm-10 col-lg-4 col-md-4">}-->
+
+						<!--{<div class="post-preview">}-->
+							<!--{<a href="[baseUri]/imovel/i.categoria_url/i.sub_url/i.item_id/">}-->
+								<!--{<section>}-->
+									<!--{<div class="post-preview-img">}-->
+										<!--{<div class="post-preview-img-inner">}-->
+											<!--{<img alt="i.tipo_title em i.sub_title - i.categoria_title por i.item_preco" title="i.tipo_title em i.sub_title - i.categoria_title por i.item_preco" src="[baseUri]/thumb/i.foto_url/336/200/crop/">}-->
+										<!--{</div>}-->
+										<!--{<div class="post-preview-label">Para i.item_finalidade</div>}-->										
+										<!--{<div class="post-preview-label-alt-wrapper">}-->
+												<!--{<div class="post-preview-label-alt">i.item_promo</div>}-->
+										<!--{</div>}-->
+									<!--{</div>}-->
+								<!--{</section>}-->	
+							<!--{</a>}-->
+							<!--{<div class="post-preview-content">}-->
+								<!--{<h2 class="post-preview-heading">i.tipo_title <span class="pull-right label label-info">Cód. i.item_ref</span></h2>}-->
+								<!--{<h2>i.categoria_title</h2>}-->
+								<!--{<h2>i.sub_title</h2>}-->
+								<!--{<div class="post-preview-price-container">}-->
+									<!--{<a href="[baseUri]/imovel/i.categoria_url/i.sub_url/i.item_id/" class="read-more-link-alt">Saiba Mais</a>}-->
+									<!--{<p class="listing-price"> R$ i.item_preco</p>}-->										
+								<!--{</div>}-->
+								<!--{<div class="post-preview-detail">}-->
+									<!--{<a>i.item_area m²</a> <span class="delimiter-inline-alt"></span> <a>i.item_dorm dormitório(s)</a> <span class="delimiter-inline-alt"></span> <a>i.item_wc banheiro(s)</a> <span class="delimiter-inline-alt"></span> <a>i.item_vaga vaga(s)</a>}-->
+								<!--{</div>}-->
+							<!--{</div>}-->
+						<!--{</div>}-->
+
+				<!--{</div>}-->
+			<!--{end:i}-->
+		</div><!-- .container -->
+	</div><!-- .section-content -->
+</section>
