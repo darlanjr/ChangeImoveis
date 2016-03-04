@@ -1,10 +1,5 @@
 <?php
 error_reporting(0);
-/*
- * @author Rafael Clares <rafael@clares.com>
- * @version 3.0 <11/2013>
- * www.clares.com.br
- */
 
 class Thumb extends PHPFrodo
 {

@@ -1,10 +1,5 @@
 <?php
 
-/*
- * @author Rafael Clares <rafael@clares.com>
- * @version 3.0 <11/2013>
- * www.clares.com.br
- */
 //faz cache 
 @header( "Cache-Control: max-age=604800" );
 
@@ -40,6 +35,15 @@ class Imovel extends PHPFrodo
         if ( $this->result() )
         {
             $this->cliente_uf = $this->data[0]['cliente_uf'];
+            $this->assignAll();
+        }
+		
+		$this->select()
+		->from( 'smtp' )
+		->execute();
+        if ( $this->result() )
+        {
+            $this->smtp = $this->data[0];
             $this->assignAll();
         }
 
@@ -189,7 +193,8 @@ class Imovel extends PHPFrodo
                 }              
                 $this->assignAll();
             }
-            $this->fillFoto();
+            $this->fillFotoPequena();
+			$this->fillFoto();
             $this->fillTipo();
             $this->fillCategoria();
             $this->fillSimilares( $i );
@@ -205,9 +210,10 @@ class Imovel extends PHPFrodo
                 ->join( 'tipo', 'item_tipo = tipo_id', 'INNER' )
                 ->join( 'sub', 'item_sub = sub_id', 'INNER' )
                 ->join( 'categoria', 'sub_categoria = categoria_id', 'INNER' )
-                ->where( "item_show = 1 and item_destaque = 1 and item_categoria = $i->item_categoria and item_tipo = $i->item_tipo and item_id <> $this->item_id" )
+                ->where( "item_finalidade = $i->item_finalidade and item_sub = $i->item_sub and item_id <> $this->item_id" )
                 ->groupby( 'item_id' )
                 ->orderby( 'item_pos asc' )
+				->limit( 0,6 )
                 ->execute();
         if ( $this->result() )
         {
@@ -301,6 +307,26 @@ class Imovel extends PHPFrodo
             $this->assignAll();
             //unset($this->data[0]);
             $this->fetch( 'fg', $this->data );
+        }
+    }
+	
+	    public function fillFotoPequena()
+    {
+        $this->select()
+                ->from( 'foto' )
+                ->where( "foto_item = $this->item_id" )
+                ->orderby( 'foto_pos asc' )
+                ->execute();
+        if ( $this->result() )
+        {
+            $this->addkey( 'foto_big', '', 'foto_url' );
+            $this->preg( '/\.jpg/', '', 'foto_url' );
+            $this->f_foto = $this->data[0]['foto_url'];
+            $this->f_foto_big = $this->data[0]['foto_big'];
+            $this->assign( 'f_foto', $this->f_foto );
+            $this->assign( 'f_big', $this->f_foto_big );
+            $this->assignAll();
+            $this->fetch( 'fp', $this->data );
         }
     }
 

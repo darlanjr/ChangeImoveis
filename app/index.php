@@ -1,12 +1,5 @@
 <?php
 
-/*
- * @author Rafael Clares <rafael@clares.com>
- * @version 3.0 <11/2013>
- * www.clares.com.br
- */
-
-//faz cache 
 //@header( "Cache-Control: max-age=604800" );
 
 class Index extends PHPFrodo

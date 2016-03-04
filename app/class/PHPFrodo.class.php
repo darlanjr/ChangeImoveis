@@ -1,20 +1,7 @@
 <?php
 
-/**
- * PHPFrodo class
- *
- * @author Rafael Clares <rafael@clares.com>
- * @version 3.0 <11/2013>
- * www.clares.com.br
- *       ,
- *      ((_,-.
- *        '-.\_)'-,
- *          )  _ )'-   PHPFrodo
- * ,.;.,;,,(/(/ \));,;.,.,
- *
- * Simplifica o acesso ao banco de dados utilizando o PDO
- *
- */
+//Simplifica o acesso ao banco de dados utilizando o PDO
+
 error_reporting( E_ALL );
 
 class PHPFrodo

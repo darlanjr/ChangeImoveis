@@ -1,13 +1,7 @@
 <?php
-/**
- * Conexao class
- *
- * @author Rafael Clares <rafadinix@gmail.com>
- * @version 1.0  <10/2010>
- * web: www.clares.wordpress.com
- *
- *  Conexao com PHP PDO retorna um objeto PDO
- */
+
+	//Conexao com PHP PDO retorna um objeto PDO
+	
 Class Conexao extends PDO
 {
 

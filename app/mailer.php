@@ -1,9 +1,5 @@
 <?php
-/*
- * @author Rafael Clares <rafael@clares.com>
- * @version 3.0 <11/2013>
- * www.clares.com.br
-*/
+
 class Mailer extends PHPFrodo
 {
 

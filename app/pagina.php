@@ -20,24 +20,6 @@ class Pagina extends Index
     {
     }
 
-    public function sobre()
-    {
-        $this->tpl( "public/sobre.html" );
-        $this->render();
-    }    
-
-    public function links()
-    {
-        $this->tpl( "public/links.html" );
-        $this->render();
-    }    
-
-    public function contato()
-    {
-        $this->tpl( "public/contato.html" );
-        $this->render();
-    }
-
     public function admin()
     {
         $this->tpl( "admin/login.html" );

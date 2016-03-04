@@ -1,24 +1,8 @@
 <?php
-/**
- * Session class
- *
- * @author Rafael Clares <rafadinix@gmail.com>
- * @version 1.0  <10/2010>
- * web: www.clares.wordpress.com
- * 
- */
+
 Class Session
 {
 
-    /**
-     * $session = new Session;
-     * $session->start();
-     * $session->init(TimeLife);
-     * $session->setMsg("Hello, ".$session->getId()."." );
-     * $session->check();
-     * $session->status();
-     * $session->destroy();
-     */
     private $session_id = null;
     public $session_message = "A sessão requerida não está ativa";
 

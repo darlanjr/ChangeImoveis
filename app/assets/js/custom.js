@@ -64,7 +64,8 @@ $(document).ready(function(e) {
 	//Barra de rolagem na lateral customizada.
 	$(document).ready(
 	  function() { 
-		$("html").niceScroll({cursorcolor:"#7D7D82"});
+		$("html").niceScroll();
+		$("html").getNiceScroll().hide();
 	  }
 	);
 	
