@@ -171,18 +171,17 @@ $(document).ready(function(e) {
             $('#bairro option').remove();
             $('#bairro').removeAttr('disabled');
             //$('#bairro').prop('disabled',false);
-            //$('#bairro').selectpicker('refresh');            
+            $('#bairro').selectpicker('refresh');            
             if(data != 0){
-                $('<option>').val('0').text('Todos').appendTo('#bairro');
                 $(data).each(function (k,v) {
                     $('<option>').val(v.sub_id).text(v.sub_title).appendTo('#bairro'); 
-                //$('#bairro').selectpicker('refresh'); 
+                $('#bairro').selectpicker('refresh'); 
                 })
                 $('#bairro').val(0)
             }
             else{
                 $('<option>').val('0').text('Nenhum bairro cadastrado').appendTo('#bairro');
-                $('#bairro').attr('disabled','disabled');
+                $('#bairro').attr('disabled','disabled');	
             }
         })    
     }

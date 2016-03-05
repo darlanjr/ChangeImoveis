@@ -36,6 +36,7 @@
     <link rel="stylesheet" href="assets/owl-carousel/owl.carousel.css" type="text/css">
     <link rel="stylesheet" href="assets/styles/animate.min.css" type="text/css">
     <link rel="stylesheet" href="assets/styles/main.css" type="text/css">
+	<link rel="stylesheet" href="assets/styles/bootstrap-select.css">
 	
 	<script type="text/javascript" src="assets/js/modernizr.js"></script>
 
@@ -43,54 +44,55 @@
 	
 </head>
 
-    <body>
+<body>
         <?php include 'header_nav.html'; ?>
-        <?php include 'form_busca.html'; ?>
+		
+        <?php include 'form_busca_nav.html'; ?>
 
-<section id="result_busca">
-    	<div class="section-content">
-        	<div class="container">
-            	<div class="section-header onscroll-animate" data-animation="fadeInLeft">
-        			<h1>Resultados da Busca</h1>
-                    <h4>Confira os resultados da sua busca.</h4>
-        		</div>
-				<!--{loop:i}-->
-					<!--{<div class="col-xs-12 col-sm-10 col-lg-4 col-md-4">}-->
+	<section id="result_busca">
+			<div class="section-content">
+				<div class="container">
+					<div class="section-header onscroll-animate" data-animation="fadeInLeft">
+						<h1>Resultados da Busca</h1>
+						<h4>Confira os resultados da sua busca.</h4>
+					</div>
+					<!--{loop:i}-->
+						<!--{<div class="col-xs-12 col-sm-10 col-lg-4 col-md-4">}-->
 
-							<!--{<div class="post-preview">}-->
-								<!--{<a href="[baseUri]/imovel/i.categoria_url/i.sub_url/i.item_id/">}-->
-									<!--{<section>}-->
-										<!--{<div class="post-preview-img">}-->
-											<!--{<div class="post-preview-img-inner">}-->
-												<!--{<img alt="i.tipo_title em i.sub_title - i.categoria_title por i.item_preco" title="i.tipo_title em i.sub_title - i.categoria_title por i.item_preco" src="[baseUri]/thumb/i.foto_url/336/200/crop/">}-->
+								<!--{<div class="post-preview">}-->
+									<!--{<a href="[baseUri]/imovel/i.categoria_url/i.sub_url/i.item_id/">}-->
+										<!--{<section>}-->
+											<!--{<div class="post-preview-img">}-->
+												<!--{<div class="post-preview-img-inner">}-->
+													<!--{<img alt="i.tipo_title em i.sub_title - i.categoria_title por i.item_preco" title="i.tipo_title em i.sub_title - i.categoria_title por i.item_preco" src="[baseUri]/thumb/i.foto_url/336/200/crop/">}-->
+												<!--{</div>}-->
+												<!--{<div class="post-preview-label">Para i.item_finalidade</div>}-->										
+												<!--{<div class="post-preview-label-alt-wrapper">}-->
+														<!--{<div class="post-preview-label-alt">i.item_promo</div>}-->
+												<!--{</div>}-->
 											<!--{</div>}-->
-											<!--{<div class="post-preview-label">Para i.item_finalidade</div>}-->										
-											<!--{<div class="post-preview-label-alt-wrapper">}-->
-													<!--{<div class="post-preview-label-alt">i.item_promo</div>}-->
-                                            <!--{</div>}-->
+										<!--{</section>}-->	
+									<!--{</a>}-->
+									<!--{<div class="post-preview-content">}-->
+										<!--{<h2 class="post-preview-heading">i.tipo_title <span class="pull-right label label-info">Cód. i.item_ref</span></h2>}-->
+										<!--{<h2>i.categoria_title</h2>}-->
+										<!--{<h2>i.sub_title</h2>}-->
+										<!--{<div class="post-preview-price-container">}-->
+											<!--{<a href="[baseUri]/imovel/i.categoria_url/i.sub_url/i.item_id/" class="read-more-link-alt">Saiba Mais</a>}-->
+											<!--{<p class="listing-price"> R$ i.item_preco</p>}-->										
 										<!--{</div>}-->
-									<!--{</section>}-->	
-								<!--{</a>}-->
-								<!--{<div class="post-preview-content">}-->
-                                    <!--{<h2 class="post-preview-heading">i.tipo_title <span class="pull-right label label-info">Cód. i.item_ref</span></h2>}-->
-									<!--{<h2>i.categoria_title</h2>}-->
-									<!--{<h2>i.sub_title</h2>}-->
-                                    <!--{<div class="post-preview-price-container">}-->
-										<!--{<a href="[baseUri]/imovel/i.categoria_url/i.sub_url/i.item_id/" class="read-more-link-alt">Saiba Mais</a>}-->
-										<!--{<p class="listing-price"> R$ i.item_preco</p>}-->										
+										<!--{<div class="post-preview-detail">}-->
+											<!--{<a>i.item_area m²</a> <span class="delimiter-inline-alt"></span> <a>i.item_dorm dormitório(s)</a> <span class="delimiter-inline-alt"></span> <a>i.item_wc banheiro(s)</a> <span class="delimiter-inline-alt"></span> <a>i.item_vaga vaga(s)</a>}-->
+										<!--{</div>}-->
 									<!--{</div>}-->
-									<!--{<div class="post-preview-detail">}-->
-                                        <!--{<a>i.item_area m²</a> <span class="delimiter-inline-alt"></span> <a>i.item_dorm dormitório(s)</a> <span class="delimiter-inline-alt"></span> <a>i.item_wc banheiro(s)</a> <span class="delimiter-inline-alt"></span> <a>i.item_vaga vaga(s)</a>}-->
-                                    <!--{</div>}-->
 								<!--{</div>}-->
-							<!--{</div>}-->
 
-					<!--{</div>}-->
-                <!--{end:i}-->
-				<h1>[noResult]</h1>
-            </div><!-- .container -->
-        </div><!-- .section-content -->
-</section>
+						<!--{</div>}-->
+					<!--{end:i}-->
+					<h1>[noResult]</h1>
+				</div><!-- .container -->
+			</div><!-- .section-content -->
+	</section>
 		
 	<?php include 'footer_nav.html'; ?>
 		
@@ -102,13 +104,34 @@
 	<script type="text/javascript" src="assets/js/jquery.inview.min.js"></script>
 	<script type="text/javascript" src="assets/js/jquery.nicescroll.js"></script>    
 	<script type="text/javascript" src="assets/js/custom.js"></script>
+	<script src="assets/js/bootstrap-select.js"></script>
 	
 	<script>
+	
 		$(function(){ 	
 				[onload]
 		})
+
+		$(document).ready(function(){
+		  $("#collapse_busca").on("hide.bs.collapse", function(){
+			$("#coll_busca").html('<span class="glyphicon glyphicon-menu-down"></span>');
+		  });
+		  $("#collapse_busca").on("show.bs.collapse", function(){
+			$("#coll_busca").html('<span class="glyphicon glyphicon-menu-up"></span>');
+		  });
+		});
+		
+		$(document).ready(function(){
+		  $("#collapse_busca_avan").on("hide.bs.collapse", function(){
+			$("#coll_avan").html('<span class="glyphicon glyphicon-menu-down"></span>');
+		  });
+		  $("#collapse_busca_avan").on("show.bs.collapse", function(){
+			$("#coll_avan").html('<span class="glyphicon glyphicon-menu-up"></span>');
+		  });
+		});
+
 	</script>
 	
-	</body>
+</body>
 	
 </html>
