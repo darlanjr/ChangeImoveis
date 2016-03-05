@@ -53,6 +53,9 @@
 	<meta property="og:url"  content="[baseUri]/imovel/[categoria_url]/[sub_url]/[item_id]/" />
     
     <script type="text/javascript" src="assets/js/modernizr.js"></script>
+	
+	<script type='text/javascript' src='//dsms0mj1bbhn4.cloudfront.net/assets/pub/shareaholic.js' data-shr-siteid='d430fa104989b8b26912eb6a1d526db9' data-cfasync='false' async='async'></script>
+
 </head>
 
 <body>
@@ -140,7 +143,7 @@
                                 <!-- Google Map -->
                                 <div class="google-map-container">
                                     <div class="google-map">
-										<h3><img src="images/icons/pin2.png" width="48px" height="48px"/> &nbsp; Localização [textoLocalizacao] do Imóvel:  <span class="hidden-inline-xs">&nbsp; [localizacao]</span></h3>
+										<span class="hidden-inline-xs">&nbsp; [localizacao]</span>
 										<div id="map"></div>
                                     </div>
                                 </div>
@@ -201,21 +204,9 @@
                                 </div>
                                 <div class="onscroll-animate" data-animation="fadeInUp">
                                     <div class="social-container">
-                                        <a href="#"><i class="fa fa-facebook"></i></a>
-                                    </div>
-                                    <div class="social-container">
-                                        <a href="#"><i class="fa fa-twitter"></i></a>
-                                    </div>
-                                    <div class="social-container">
-                                        <a href="#"><i class="fa fa-rss"></i></a>
-                                    </div>
-                                    <div class="social-container">
-                                        <a href="#"><i class="fa fa-pinterest"></i></a>
-                                    </div>
-                                    <div class="social-container">
-                                        <a href="#"><i class="fa fa-tumblr"></i></a>
-                                    </div>
-                                </div>
+										<div class='shareaholic-canvas' data-app='share_buttons' data-app-id='23958475'></div> 
+									</div>
+								</div>
                             </div><!-- .section-content -->
                         </section>
                         
@@ -236,7 +227,7 @@
                                     <li class="onscroll-animate" data-animation="fadeInRight" data-delay="300">
 										<a>
 											<article>
-												<div class="list-values-content">Preço de Venda: </div>
+												<div class="list-values-content">Venda: </div>
 												<div class="list-values-value"> [item_preco]</div>
 											</article>
 										</a>
@@ -244,7 +235,7 @@
                                     <li class="onscroll-animate" data-animation="fadeInRight" data-delay="400">
 										<a>
 											<article>
-												<div class="list-values-content">Temporada/Diária: </div>
+												<div class="list-values-content">Temp/Diária: </div>
 												<div class="list-values-value"> [item_preco_temp]</div>
 											</article>
 										</a>
@@ -252,7 +243,7 @@
                                     <li class="onscroll-animate" data-animation="fadeInRight" data-delay="500">
 										<a>
 											<article>
-												<div class="list-values-content">Preço de Locação: </div>
+												<div class="list-values-content">Locação: </div>
 												<div class="list-values-value"> [item_preco_locacao]</div>
 											</article>
 										</a>
@@ -260,7 +251,7 @@
 									<li class="onscroll-animate" data-animation="fadeInRight" data-delay="500">
 										<a>
 											<article>
-												<div class="list-values-content">Valor do Condomínio: </div>
+												<div class="list-values-content">Condomínio: </div>
 												<div class="list-values-value"> [item_preco_condominio]</div>
 											</article>
 										</a>
@@ -317,7 +308,7 @@
                                     </li>
                               	</ul>
                           	</div><!-- .section-content -->
-                      	</section>			
+                      	</section>
                     </div><!-- .col-md-3 -->
                 </div><!-- .row -->
             </div><!-- .container -->
@@ -351,26 +342,7 @@
                 var address = '[endereco_mapa]';
                 setMapAddr("map",address,14);					
             })  
-	</script>
-
-	<script type="text/javascript">
-		//<![CDATA[
-		(function() {
-			var shr = document.createElement('script');
-			shr.setAttribute('data-cfasync', 'false');
-			shr.src = '//dsms0mj1bbhn4.cloudfront.net/assets/pub/shareaholic.js';
-			shr.type = 'text/javascript'; shr.async = 'true';
-			shr.onload = shr.onreadystatechange = function() {
-				var rs = this.readyState;
-				if (rs && rs != 'complete' && rs != 'loaded') return;
-				var site_id = '39e07923cec488add2e8c7d4263934e0';
-				try { Shareaholic.init(site_id); } catch (e) {}
-			};
-			var s = document.getElementsByTagName('script')[0];
-			s.parentNode.insertBefore(shr, s);
-		})();
-		//]]>
-	</script> 	
+	</script>	
 	
 </body>
 </html>
