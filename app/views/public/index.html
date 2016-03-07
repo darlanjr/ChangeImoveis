@@ -37,6 +37,7 @@
     <link rel="stylesheet" href="assets/styles/animate.min.css" type="text/css">
     <link rel="stylesheet" href="assets/styles/main.css" type="text/css">
 	<link rel="stylesheet" href="assets/styles/bootstrap-select.css">
+	<link rel='stylesheet' href='assets/styles/style.css'>
 	
 	<script type="text/javascript" src="assets/js/modernizr.js"></script>
 
@@ -48,30 +49,29 @@
 	<?php include 'header.html'; ?>
 	
 	<section id="home">
-	<div class="slide-1 bg-image bg-pattern">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-6 pull-right">
-					<div class="slide-box arrow-left">
-						<h2>25688 Portafino Pl, Whittier, LA 15998</h2>
-						<p>An entertainer's paradise in the Friendly Hills community, priced to sell. Featuring 4 spacious bedrooms and 3 bathrooms (one bedroom/bath downstairs), 3170 sq ft of living space with a good size lot at approx.13414 sq ft.</p>
-						<p><a title="Tooltip example" data-toggle="tooltip" href="#">I'm tooltip</a></p>
-						<hr>
-						<a href="#">4 Bedrooms</a> <span class="delimiter-inline"></span> <a href="#">3 Bathrooms</a> <span class="delimiter-inline"></span> <a href="#">1 Kitchen</a> <span class="delimiter-inline"></span> <a href="#">2 Garages</a>
-						<hr>
-						<div class="slide-price-container">
-							<a href="property_single.html#" class="read-more-link-alt">Learn more</a>
-							<p class="listing-price">$350.000</p>
+		<div id="slider">
+			<div class="owl-carousel owl-carousel-fullwidth">
+				<div class="item" style="background-image:url(assets/images/wallpaper.png)">
+					<div class="container" style="position: relative;">
+						<div class="row">
+							<div class="col-md-8 col-md-offset-2 text-center">
+								<div class="fh5co-owl-text-wrap">
+									<div class="fh5co-owl-text">
+										<h1 class="fh5co-lead to-animate">Visibilidade Digital</h1>
+										<h2 class="fh5co-sub-lead to-animate">Desenvolva sua visibilidade digital conosco. <br>Conheça nossos serviços e solicite uma proposta de orçamento sem compromisso.</h2>
+										<p class="to-animate-2"><a data-nav-section="contact" class="btn btn-primary btn-lg">Vamos tomar um café?</a></p>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div><!-- .container -->
-	</div><!-- .slide-1 -->
+		</div>
 	</section>
 		
 	<?php include 'form_busca.html'; ?>
-	<section id="citation-section" class="section-contrast">
+	<section id="citation-section" class="section-contrast" data-section="citation-section">
     	<div class="bg-image bg-pattern bg-cover parallax-background">
             <div class="section-content onscroll-animate" data-animation="fadeInUp">
 				<div class="section-content">
@@ -149,7 +149,7 @@
     <div class="margin-30 visible-lg-block visible-md-block"></div>
 	     
 	<section id="contact">
-    	<div class="section-content">
+    	<div class="section-content" data-section="contact" >
         	<div class="container">
             	<div class="section-header onscroll-animate" data-animation="fadeInLeft">
         			<h1>Vamos conversar?</h1>
@@ -263,6 +263,7 @@
 	<script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=false"></script>
 	<script type="text/javascript" src="assets/js/jquery.nicescroll.js"></script>    
 	<script type="text/javascript" src="assets/js/custom.js"></script>
+	<script type="text/javascript" src="assets/js/main.js"></script>
 	<script type="text/javascript" src="js/jquery/cep/gmaps.js"></script>
 	<script type="text/javascript" src="js/jquery/cep/cep.js" ></script>		
 	<script src="assets/js/bootstrap-select.js"></script>
