@@ -4,344 +4,344 @@
 <!--[if IE 9 ]>    <html lang="en-gb" class="isie ie9 no-js"> <![endif]-->
 <!--[if (gt IE 9)|!(IE)]><!--> <html lang="en-gb" xml:lang="en-gb" class="no-js"> <!--<![endif]-->
 
-<head>
-	<title>[tipo_title] em [categoria_title]  | [config_site_title]</title>
-    <!--[if lt IE 9]> 
-    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <![endif]-->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-	<meta http-equiv="Cache-control" content="public" />
-	<link href="images/layout/faveicon.ico" rel="icon" type="image/x-icon" />
-	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
-	<meta name="description" content="[tipo_title] em [categoria_title] - [sub_title] | [config_site_title]" />
-	<meta name="keywords" content="[tipo_title],[categoria_title],[sub_title],[config_site_keywords]" />
-	<meta name="application-name" content="Change Imóveis" />
-	<meta name="title" content="[tipo_title] em [categoria_title] - [sub_title]  | [config_site_title]" />       
-	<link rel="canonical" href="[baseUri]/imovel/[categoria_url]/[sub_url]/[item_id]/" />
-	<meta name="author" content="Change Imóveis" />
-	<meta name="robots" content="all" /> 
-	<meta name="language" content="br" /> 
-	<meta name="robots" content="follow" />	      
-    
-    <link rel="icon" href="icon.png" type="image/png">
+    <head>
+        <title>[tipo_title] em [categoria_title]  | [config_site_title]</title>
+        <!--[if lt IE 9]> 
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <![endif]-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta http-equiv="Cache-control" content="public" />
+        <link href="assets/images/layout/faveicon.ico" rel="icon" type="image/x-icon" />
+        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+        <meta name="description" content="[tipo_title] em [categoria_title] - [sub_title] | [config_site_title]" />
+        <meta name="keywords" content="[tipo_title],[categoria_title],[sub_title],[config_site_keywords]" />
+        <meta name="application-name" content="Change Imóveis" />
+        <meta name="title" content="[tipo_title] em [categoria_title] - [sub_title]  | [config_site_title]" />       
+        <link rel="canonical" href="[baseUri]/imovel/[categoria_url]/[sub_url]/[item_id]/" />
+        <meta name="author" content="Change Imóveis" />
+        <meta name="robots" content="all" /> 
+        <meta name="language" content="br" /> 
+        <meta name="robots" content="follow" />	      
 
-    <!--[if lt IE 9]>
-        <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    
-    <!-- Google Fonts -->
-	<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700,500,400italic,500italic%7CMontserrat:400,700' rel='stylesheet' type='text/css'>    
-    
-    <!-- Icon-Font -->
-    <link rel="stylesheet" href="assets/font-awesome/font-awesome/css/font-awesome.min.css" type="text/css">
-    <!--[if IE 7]>
-    	<link rel="stylesheet" href="assets/font-awesome/font-awesome/css/font-awesome-ie7.min.css" type="text/css">
-    <![endif]-->
-    
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="assets/stroll/stroll.min.css" type="text/css">
-    <link rel="stylesheet" href="assets/owl-carousel/owl.carousel.css" type="text/css">
-    <link rel="stylesheet" href="assets/flexslider/flexslider.min.css" type="text/css">
-    <link rel="stylesheet" href="assets/lightbox/css/lightbox.css" type="text/css">
-    <link rel="stylesheet" href="assets/styles/animate.min.css" type="text/css">
-    <link rel="stylesheet" href="assets/styles/main.css" type="text/css">
-	
-	<meta property="og:image" content="[baseUri]/thumb/[f_foto]/200/200/" />
-	<meta property="og:type" content="article" /> 
-	<meta property="og:description" content="[item_desc_meta]" />	
-	<meta property="og:url"  content="[baseUri]/imovel/[categoria_url]/[sub_url]/[item_id]/" />
-    
-    <script type="text/javascript" src="assets/js/modernizr.js"></script>
-	
-</head>
+        <link rel="icon" href="icon.png" type="image/png">
 
-<body>
-	
-	<?php include 'header_nav.html'; ?>
-	
-	<section>
-    	<div class="section-content">
-        	<div class="container">
-            	<div class="section-header onscroll-animate" data-animation="fadeInLeft">
-        			<h1>Fotos do Imóvel</h1>
-                    <h4>Veja as imagens e principais informações sobre o imóvel.</h4>
-        		</div>
-                <div class="row">
-                	<div class="col-md-9">
-                    	<section id="slider-section">
-                            <div id="flex-slider" class="preview-images-slider">
-                                <ul class="slides">
-									<!--{loop:fg}-->
-										<!--{<li>}-->
-											<!--{<div class="preview-single">}-->
-												<!--{<a caption="fg.foto_title">}-->
-												<!--{<img id="fg.foto_id" src="[baseUri]/thumb/fg.foto_url/870/570/crop/" width="870" height="570"></a>}-->										
-												<!--{<div class="preview-single-labels">}-->
-													<!--{<div class="clearfix">}-->
-														<!--{<div class="label-black pull-left">}-->
-															<!--{<h3>[tipo_title] em [categoria_title] - [sub_title]</h3>}-->
-															<!--{<p><a>[item_area] m²</a> <span class="delimiter-inline-alt"></span> <a>[item_dorm] dormitório(s)</a> <span class="delimiter-inline-alt"></span> <a>[item_wc] banheiro(s)</a> <span class="delimiter-inline-alt"></span> <a>[item_vaga] vaga(s)</a></p>}-->
-														<!--{</div>}-->
-														<!--{<div class="label-white pull-right">}-->
-															<!--{<div class="listing-price">}-->
-																<!--{[item_preco]}-->
-															<!--{</div>}-->
-														<!--{</div>}-->
-													<!--{</div>}-->
-													<!--{<div class="label-color">}-->
-														<!--{<h3 class="no-margin">Para [item_negocio]</h3>}-->
-													<!--{</div>}-->
-												<!--{</div>}-->																				
-											<!--{</div>}-->
-										<!--{</li>}-->
-									<!--{end:fg}-->
-                                </ul>
-                            </div><!-- #slider -->
-                          
-							<div class="onscroll-animate" data-animation="fadeInUp">
-								<div id="flex-carousel" class="preview-thumnails-slider">
-									<ul class="slides">
-										<!--{loop:fp}-->
-											<!--{<li>}-->	
-												<!--{<img id="fp.foto_id" src="[baseUri]/thumb/fp.foto_url/166/106/crop/" width="166" height="106"></a>}-->		
-											<!--{</li>}-->
-										<!--{end:fp}-->
-									</ul>
-								</div><!-- #carousel -->			
-							</div><!-- .onscroll-animate -->
-							<div class="section-header onscroll-animate" data-animation="fadeInLeft">
-								<h1>Descrição do Imóvel</h1>
-								<h4>Confira os detalhes do imóvel que você escolheu.</h4>
-							</div>
-                            <p class="onscroll-animate" data-animation="fadeInUp">[item_desc]</p>
-                    	</section>
-                    
-                    	<section id="checkbox-list-section">
-                            <div class="section-content">
-                                <div class="section-header onscroll-animate" data-animation="fadeInLeft">
-                                	<h1>Características do Imóvel</h1>
-                                </div>
-                            	<ul class="list-checkbox">
-									<li>[tipo_title]</li>
-									<li>[item_dorm] dormitório(s)</li>
-									<li>[item_suite] suíte(s)</li>
-									<li>[item_vaga] vaga(s) na garagem</li>
-									<li>[item_wc] banheiro(s)</li>
-									<li>[item_area] M²</li>
-                        		</ul>
-                           	</div>
-                      	</section>
-                                               
-                        <section id="map-section">
-                            <div class="section-content">
-                                <div class="section-header onscroll-animate" data-animation="fadeInLeft">
-                                	<h1>Localização do Imóvel</h1>
-                                </div>
-                                <!-- Google Map -->
-                                <div class="google-map-container">
-                                    <div class="google-map">
-										<span class="hidden-inline-xs">&nbsp; [localizacao]</span>
-										<div id="map"></div>
-                                    </div>
-                                </div>
-								<!-- /Google Map -->
-                           	</div>
-                      	</section>
-                                               
-                        <section id="recent-properties-section">
-                            <div class="section-content">
-                                <div class="section-header onscroll-animate" data-animation="fadeInLeft">
-                                	<h1>Imóveis Semelhantes</h1>
-                                </div>
+        <!--[if lt IE 9]>
+            <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+        <!-- Google Fonts -->
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700,500,400italic,500italic%7CMontserrat:400,700' rel='stylesheet' type='text/css'>    
+
+        <!-- Icon-Font -->
+        <link rel="stylesheet" href="assets/font-awesome/font-awesome/css/font-awesome.min.css" type="text/css">
+        <!--[if IE 7]>
+            <link rel="stylesheet" href="assets/font-awesome/font-awesome/css/font-awesome-ie7.min.css" type="text/css">
+        <![endif]-->
+
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" type="text/css">
+        <link rel="stylesheet" href="assets/stroll/stroll.min.css" type="text/css">
+        <link rel="stylesheet" href="assets/owl-carousel/owl.carousel.css" type="text/css">
+        <link rel="stylesheet" href="assets/flexslider/flexslider.min.css" type="text/css">
+        <link rel="stylesheet" href="assets/lightbox/css/lightbox.css" type="text/css">
+        <link rel="stylesheet" href="assets/styles/animate.min.css" type="text/css">
+        <link rel="stylesheet" href="assets/styles/main.css" type="text/css">
+
+        <meta property="og:image" content="[baseUri]/thumb/[f_foto]/200/200/" />
+        <meta property="og:type" content="article" /> 
+        <meta property="og:description" content="[item_desc_meta]" />	
+        <meta property="og:url"  content="[baseUri]/imovel/[categoria_url]/[sub_url]/[item_id]/" />
+
+        <script type="text/javascript" src="assets/js/modernizr.js"></script>
+
+    </head>
+
+    <body>
+
+        <?php include 'header_nav.html'; ?>
+
+        <section>
+            <div class="section-content">
+                <div class="container">
+                    <div class="section-header onscroll-animate" data-animation="fadeInLeft">
+                        <h1>Fotos do Imóvel</h1>
+                        <h4>Veja as imagens e principais informações sobre o imóvel.</h4>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-9">
+                            <section id="slider-section">
+                                <div id="flex-slider" class="preview-images-slider">
+                                    <ul class="slides">
+                                        <!--{loop:fg}-->
+                                        <!--{<li>}-->
+                                        <!--{<div class="preview-single">}-->
+                                        <!--{<a <a href="[baseUri]/thumb/fg.foto_url/870/570/crop/" data-lightbox="post1-img" caption="fg.foto_title">}-->
+                                        <!--{<img id="fg.foto_id" src="[baseUri]/thumb/fg.foto_url/870/570/crop/" width="870" height="570"></a>}-->										
+                                        <!--{<div class="preview-single-labels">}-->
+                                        <!--{<div class="clearfix">}-->
+                                        <!--{<div class="label-black pull-left">}-->
+                                        <!--{<h3>[tipo_title] em [categoria_title] - [sub_title]</h3>}-->
+                                        <!--{<p><a>[item_area] m²</a> <span class="delimiter-inline-alt"></span> <a>[item_dorm] dormitório(s)</a> <span class="delimiter-inline-alt"></span> <a>[item_wc] banheiro(s)</a> <span class="delimiter-inline-alt"></span> <a>[item_vaga] vaga(s)</a></p>}-->
+                                        <!--{</div>}-->
+                                        <!--{<div class="label-white pull-right">}-->
+                                        <!--{<div class="listing-price">}-->
+                                        <!--{[item_preco]}-->
+                                        <!--{</div>}-->
+                                        <!--{</div>}-->
+                                        <!--{</div>}-->
+                                        <!--{<div class="label-color">}-->
+                                        <!--{<h3 class="no-margin">Para [item_negocio]</h3>}-->
+                                        <!--{</div>}-->
+                                        <!--{</div>}-->																				
+                                        <!--{</div>}-->
+                                        <!--{</li>}-->
+                                        <!--{end:fg}-->
+                                    </ul>
+                                </div><!-- #slider -->
+
                                 <div class="onscroll-animate" data-animation="fadeInUp">
-                                    <div id="recent_prop_slider" class="pagination-alt">
-                                    	<!--{loop:s}-->
-											<!--{<article>}-->
-												<!--{<div class="post-preview-alt">}-->
-													<!--{<a href="[baseUri]/imovel/s.categoria_url/s.sub_url/s.item_id/">}-->
-														<!--{<section>}-->
-															<!--{<div class="post-preview-img">}-->
-																<!--{<div class="post-preview-img-inner">}-->
-																	<!--{<img class="media-object img-polaroid" src="[baseUri]/thumb/s.foto_url/370/300/crop/" width="370" height="300">}-->
-																<!--{</div>}-->
-																<!--{<div class="post-preview-label2">Para s.item_finalidade</div>}-->
-																<!--{<div class="post-img-detail">}-->
-																	<!--{<div class="post-img-detail-wrapper">}-->
-																		<!--{<div class="post-img-detail-content">}-->
-																			<!--{<div class="post-img-detail-box">R$ s.item_preco</div>}-->
-																		<!--{</div>}-->
-																	<!--{</div>}-->
-																<!--{</div>}-->
-															<!--{</div>}-->
-														<!--{</section>}-->
-													<!--{</a>}-->
-													<!--{<div class="post-preview-content">
-														<!--{<h2 class="post-preview-heading"><a href="[baseUri]/imovel/s.categoria_url/s.sub_url/s.item_id/">s.tipo_title em s.categoria_title</a></h2>}-->
-														<!--{<div class="post-preview-detail">}-->
-															<!--{<a>Bairro: s.sub_title</a><br>}-->
-															<!--{<a>s.item_area m²</a> <span class="delimiter-inline-alt"></span> <a >s.item_dorm dormitório(s)</a><br>}-->
-															<!--{<a>s.item_wc banheiro(s)</a> <span class="delimiter-inline-alt"></span> <a>s.item_vaga vaga(s)</a>}-->
-														<!--{</div>}-->
-													<!--{</div>}-->
-												<!--{</div>}-->
-											<!--{</article>}-->
-										<!--{end:s}-->
-                                    </div><!-- #recent_prop_slider -->
+                                    <div id="flex-carousel" class="preview-thumnails-slider">
+                                        <ul class="slides">
+                                            <!--{loop:fp}-->
+                                            <!--{<li>}-->	
+                                            <!--{<img id="fp.foto_id" src="[baseUri]/thumb/fp.foto_url/166/106/crop/" width="166" height="106"></a>}-->		
+                                            <!--{</li>}-->
+                                            <!--{end:fp}-->
+                                        </ul>
+                                    </div><!-- #carousel -->			
                                 </div><!-- .onscroll-animate -->
-                          	</div><!-- .section-content -->
-                      	</section>
-                        
-                        <div class="margin-30 visible-sm-block visible-xs-block"></div>
-                    </div><!-- .col-md-9 -->
-                    <div class="col-md-3 sidebar">
-                    	<section>
-                        	<div class="section-content">
-                            	<div class="section-header onscroll-animate" data-animation="fadeInLeft">
-                                    <h1>Compartilhe</h1>
+                                <div class="section-header onscroll-animate" data-animation="fadeInLeft">
+                                    <h1>Descrição do Imóvel</h1>
+                                    <h4>Confira os detalhes do imóvel que você escolheu.</h4>
                                 </div>
-                                <div class="onscroll-animate" data-animation="fadeInUp">
-									<div class='shareaholic-canvas' data-app='share_buttons' data-app-id='23958475'></div> 
-								</div>
-                            </div><!-- .section-content -->
-                        </section>
-                        						
-                        <section>
-                        	<div class="section-content">
-                            	<div class="section-header onscroll-animate" data-animation="fadeInLeft">
-                                    <h1>Preços</h1>
-                                </div>
-                                <ul class="list-values">
-                                    <li class="onscroll-animate" data-animation="fadeInRight">
-										<a>
-											<article>
-												<div class="list-values-content">Transação: </div>
-												<div class="list-values-value"> [item_negocio]</div>
-											</article>
-										</a>
-                                    </li>
-                                    <li class="onscroll-animate" data-animation="fadeInRight" data-delay="300">
-										<a>
-											<article>
-												<div class="list-values-content">Venda: </div>
-												<div class="list-values-value"> [item_preco]</div>
-											</article>
-										</a>
-                                    </li>
-                                    <li class="onscroll-animate" data-animation="fadeInRight" data-delay="400">
-										<a>
-											<article>
-												<div class="list-values-content">Temp/Diária: </div>
-												<div class="list-values-value"> [item_preco_temp]</div>
-											</article>
-										</a>
-                                    </li>
-                                    <li class="onscroll-animate" data-animation="fadeInRight" data-delay="500">
-										<a>
-											<article>
-												<div class="list-values-content">Locação: </div>
-												<div class="list-values-value"> [item_preco_locacao]</div>
-											</article>
-										</a>
-                                    </li>
-									<li class="onscroll-animate" data-animation="fadeInRight" data-delay="500">
-										<a>
-											<article>
-												<div class="list-values-content">Condomínio: </div>
-												<div class="list-values-value"> [item_preco_condominio]</div>
-											</article>
-										</a>
-                                    </li>
-									<li class="onscroll-animate" data-animation="fadeInRight" data-delay="500">
-										<a>
-											<article>
-												<div class="list-values-content">Valor do IPTU: </div>
-												<div class="list-values-value"> [item_preco_iptu]</div>
-											</article>
-										</a>
-                                    </li>
-                              	</ul>
-                          	</div><!-- .section-content -->
-                      	</section>
-						
-						<section>
-                        	<div class="section-content">
-                            	<div class="section-header onscroll-animate" data-animation="fadeInLeft">
-                                    <h1>Categorias</h1>
-                                </div>
-                                <ul class="list-values">
-                                    <li class="onscroll-animate" data-animation="fadeInRight">
-                                        <a href="blog_one_column.html">
-                                            <article>
-                                                <div class="list-values-content">Sport Properties</div>
-                                                <div class="list-values-value">15</div>
-                                            </article>
-                                        </a>
-                                    </li>
-                                    <li class="onscroll-animate" data-animation="fadeInRight" data-delay="300">
-                                        <a href="blog_one_column.html">
-                                            <article>
-                                                <div class="list-values-content">Gardens</div>
-                                                <div class="list-values-value">25</div>
-                                            </article>
-                                        </a>
-                                    </li>
-                                    <li class="onscroll-animate" data-animation="fadeInRight" data-delay="400">
-                                        <a href="blog_one_column.html">
-                                            <article>
-                                                <div class="list-values-content">Building Properties</div>
-                                                <div class="list-values-value">44</div>
-                                            </article>
-                                        </a>
-                                    </li>
-                                    <li class="onscroll-animate" data-animation="fadeInRight" data-delay="500">
-                                        <a href="blog_one_column.html">
-                                            <article>
-                                                <div class="list-values-content">Lake Properties</div>
-                                                <div class="list-values-value">12</div>
-                                            </article>
-                                        </a>
-                                    </li>
-                              	</ul>
-                          	</div><!-- .section-content -->
-                      	</section>
-                    </div><!-- .col-md-3 -->
-                </div><!-- .row -->
-            </div><!-- .container -->
-        </div><!-- .section-content -->
-    </section>
-   
-	<?php include 'footer_nav.html'; ?>
-	
-	<script type="text/javascript" src="assets/js/jquery-1.11.2.min.js"></script>
-    <script type="text/javascript" src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="assets/owl-carousel/owl.carousel.min.js"></script>
-    <script type="text/javascript" src="assets/stroll/stroll.min.js"></script>
-    <script type="text/javascript" src="assets/flexslider/jquery.flexslider-min.js"></script>
-    <script type="text/javascript" src="assets/lightbox/js/lightbox.min.js"></script>
-    <script type="text/javascript" src="assets/js/jquery.scrollTo.min.js"></script>
-    <script type="text/javascript" src="assets/js/jquery.stellar.min.js"></script>
-    <script type="text/javascript" src="assets/js/jquery.inview.min.js"></script>
-	
-	<script type="text/javascript" src="assets/js/jquery.nicescroll.js"></script> 
-	
-	<!-- Mapas -->
-	
-	<script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=false"></script>
-	<script type="text/javascript" src="assets/js/custom.js"></script>
-	<script type="text/javascript" src="js/jquery/cep/gmaps.js"></script>
-	<script type="text/javascript" src="js/jquery/cep/cep.js" ></script>
+                                <p class="onscroll-animate" data-animation="fadeInUp">[item_desc]</p>
+                            </section>
 
-	
-	<script>
-            $(function(){
+                            <section id="checkbox-list-section">
+                                <div class="section-content">
+                                    <div class="section-header onscroll-animate" data-animation="fadeInLeft">
+                                        <h1>Características do Imóvel</h1>
+                                    </div>
+                                    <ul class="list-checkbox">
+                                        <li>[tipo_title]</li>
+                                        <li>[item_dorm] dormitório(s)</li>
+                                        <li>[item_suite] suíte(s)</li>
+                                        <li>[item_vaga] vaga(s) na garagem</li>
+                                        <li>[item_wc] banheiro(s)</li>
+                                        <li>[item_area] M²</li>
+                                    </ul>
+                                </div>
+                            </section>
+
+                            <section id="map-section">
+                                <div class="section-content">
+                                    <div class="section-header onscroll-animate" data-animation="fadeInLeft">
+                                        <h1>Localização do Imóvel</h1>
+                                    </div>
+                                    <!-- Google Map -->
+                                    <div class="google-map-container">
+                                        <div class="google-map">
+                                            <span class="hidden-inline-xs">&nbsp; [localizacao]</span>
+                                            <div id="map"></div>
+                                        </div>
+                                    </div>
+                                    <!-- /Google Map -->
+                                </div>
+                            </section>
+
+                            <section id="recent-properties-section">
+                                <div class="section-content">
+                                    <div class="section-header onscroll-animate" data-animation="fadeInLeft">
+                                        <h1>Imóveis Semelhantes</h1>
+                                    </div>
+                                    <div class="onscroll-animate" data-animation="fadeInUp">
+                                        <div id="recent_prop_slider" class="pagination-alt">
+                                            <!--{loop:s}-->
+                                            <!--{<article>}-->
+                                            <!--{<div class="post-preview-alt">}-->
+                                            <!--{<a href="[baseUri]/imovel/s.categoria_url/s.sub_url/s.item_id/">}-->
+                                            <!--{<section>}-->
+                                            <!--{<div class="post-preview-img">}-->
+                                            <!--{<div class="post-preview-img-inner">}-->
+                                            <!--{<img class="media-object img-polaroid" src="[baseUri]/thumb/s.foto_url/370/300/crop/" width="370" height="300">}-->
+                                            <!--{</div>}-->
+                                            <!--{<div class="post-preview-label2">Para s.item_finalidade</div>}-->
+                                            <!--{<div class="post-img-detail">}-->
+                                            <!--{<div class="post-img-detail-wrapper">}-->
+                                            <!--{<div class="post-img-detail-content">}-->
+                                            <!--{<div class="post-img-detail-box">R$ s.item_preco</div>}-->
+                                            <!--{</div>}-->
+                                            <!--{</div>}-->
+                                            <!--{</div>}-->
+                                            <!--{</div>}-->
+                                            <!--{</section>}-->
+                                            <!--{</a>}-->
+                                            <!--{<div class="post-preview-content">
+                                            <!--{<h2 class="post-preview-heading"><a href="[baseUri]/imovel/s.categoria_url/s.sub_url/s.item_id/">s.tipo_title em s.categoria_title</a></h2>}-->
+                                            <!--{<div class="post-preview-detail">}-->
+                                            <!--{<a>Bairro: s.sub_title</a><br>}-->
+                                            <!--{<a>s.item_area m²</a> <span class="delimiter-inline-alt"></span> <a >s.item_dorm dormitório(s)</a><br>}-->
+                                            <!--{<a>s.item_wc banheiro(s)</a> <span class="delimiter-inline-alt"></span> <a>s.item_vaga vaga(s)</a>}-->
+                                            <!--{</div>}-->
+                                            <!--{</div>}-->
+                                            <!--{</div>}-->
+                                            <!--{</article>}-->
+                                            <!--{end:s}-->
+                                        </div><!-- #recent_prop_slider -->
+                                    </div><!-- .onscroll-animate -->
+                                </div><!-- .section-content -->
+                            </section>
+
+                            <div class="margin-30 visible-sm-block visible-xs-block"></div>
+                        </div><!-- .col-md-9 -->
+                        <div class="col-md-3 sidebar">
+                            <section>
+                                <div class="section-content">
+                                    <div class="section-header onscroll-animate" data-animation="fadeInLeft">
+                                        <h1>Compartilhe</h1>
+                                    </div>
+                                    <div class="onscroll-animate" data-animation="fadeInUp">
+                                        <div class='shareaholic-canvas' data-app='share_buttons' data-app-id='23958475'></div> 
+                                    </div>
+                                </div><!-- .section-content -->
+                            </section>
+
+                            <section>
+                                <div class="section-content">
+                                    <div class="section-header onscroll-animate" data-animation="fadeInLeft">
+                                        <h1>Preços</h1>
+                                    </div>
+                                    <ul class="list-values">
+                                        <li class="onscroll-animate" data-animation="fadeInRight">
+                                            <a>
+                                                <article>
+                                                    <div class="list-values-content">Transação: </div>
+                                                    <div class="list-values-value"> [item_negocio]</div>
+                                                </article>
+                                            </a>
+                                        </li>
+                                        <li class="onscroll-animate" data-animation="fadeInRight" data-delay="300">
+                                            <a>
+                                                <article>
+                                                    <div class="list-values-content">Venda: </div>
+                                                    <div class="list-values-value"> [item_preco]</div>
+                                                </article>
+                                            </a>
+                                        </li>
+                                        <li class="onscroll-animate" data-animation="fadeInRight" data-delay="400">
+                                            <a>
+                                                <article>
+                                                    <div class="list-values-content">Temp/Diária: </div>
+                                                    <div class="list-values-value"> [item_preco_temp]</div>
+                                                </article>
+                                            </a>
+                                        </li>
+                                        <li class="onscroll-animate" data-animation="fadeInRight" data-delay="500">
+                                            <a>
+                                                <article>
+                                                    <div class="list-values-content">Locação: </div>
+                                                    <div class="list-values-value"> [item_preco_locacao]</div>
+                                                </article>
+                                            </a>
+                                        </li>
+                                        <li class="onscroll-animate" data-animation="fadeInRight" data-delay="500">
+                                            <a>
+                                                <article>
+                                                    <div class="list-values-content">Condomínio: </div>
+                                                    <div class="list-values-value"> [item_preco_condominio]</div>
+                                                </article>
+                                            </a>
+                                        </li>
+                                        <li class="onscroll-animate" data-animation="fadeInRight" data-delay="500">
+                                            <a>
+                                                <article>
+                                                    <div class="list-values-content">Valor do IPTU: </div>
+                                                    <div class="list-values-value"> [item_preco_iptu]</div>
+                                                </article>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div><!-- .section-content -->
+                            </section>
+
+                            <section>
+                                <div class="section-content">
+                                    <div class="section-header onscroll-animate" data-animation="fadeInLeft">
+                                        <h1>Categorias</h1>
+                                    </div>
+                                    <ul class="list-values">
+                                        <li class="onscroll-animate" data-animation="fadeInRight">
+                                            <a href="blog_one_column.html">
+                                                <article>
+                                                    <div class="list-values-content">Sport Properties</div>
+                                                    <div class="list-values-value">15</div>
+                                                </article>
+                                            </a>
+                                        </li>
+                                        <li class="onscroll-animate" data-animation="fadeInRight" data-delay="300">
+                                            <a href="blog_one_column.html">
+                                                <article>
+                                                    <div class="list-values-content">Gardens</div>
+                                                    <div class="list-values-value">25</div>
+                                                </article>
+                                            </a>
+                                        </li>
+                                        <li class="onscroll-animate" data-animation="fadeInRight" data-delay="400">
+                                            <a href="blog_one_column.html">
+                                                <article>
+                                                    <div class="list-values-content">Building Properties</div>
+                                                    <div class="list-values-value">44</div>
+                                                </article>
+                                            </a>
+                                        </li>
+                                        <li class="onscroll-animate" data-animation="fadeInRight" data-delay="500">
+                                            <a href="blog_one_column.html">
+                                                <article>
+                                                    <div class="list-values-content">Lake Properties</div>
+                                                    <div class="list-values-value">12</div>
+                                                </article>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div><!-- .section-content -->
+                            </section>
+                        </div><!-- .col-md-3 -->
+                    </div><!-- .row -->
+                </div><!-- .container -->
+            </div><!-- .section-content -->
+        </section>
+
+        <?php include 'footer_nav.html'; ?>
+
+        <script type="text/javascript" src="assets/js/jquery-1.11.2.min.js"></script>
+        <script type="text/javascript" src="assets/bootstrap/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="assets/owl-carousel/owl.carousel.min.js"></script>
+        <script type="text/javascript" src="assets/stroll/stroll.min.js"></script>
+        <script type="text/javascript" src="assets/flexslider/jquery.flexslider-min.js"></script>
+        <script type="text/javascript" src="assets/lightbox/js/lightbox.min.js"></script>
+        <script type="text/javascript" src="assets/js/jquery.scrollTo.min.js"></script>
+        <script type="text/javascript" src="assets/js/jquery.stellar.min.js"></script>
+        <script type="text/javascript" src="assets/js/jquery.inview.min.js"></script>
+
+        <script type="text/javascript" src="assets/js/jquery.nicescroll.js"></script> 
+
+        <!-- Mapas -->
+
+        <script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=false"></script>
+        <script type="text/javascript" src="assets/js/custom.js"></script>
+        <script type="text/javascript" src="js/jquery/cep/gmaps.js"></script>
+        <script type="text/javascript" src="js/jquery/cep/cep.js" ></script>
+
+
+        <script>
+            $(function () {
                 var address = '[endereco_mapa]';
-                setMapAddr("map",address,14);					
-            })  
-	</script>
+                setMapAddr("map", address, 14);
+            })
+        </script>
 
-<script type='text/javascript' src='//dsms0mj1bbhn4.cloudfront.net/assets/pub/shareaholic.js' data-shr-siteid='d430fa104989b8b26912eb6a1d526db9' data-cfasync='false' async='async'></script>
-  	
-	
-</body>
+        <script type='text/javascript' src='//dsms0mj1bbhn4.cloudfront.net/assets/pub/shareaholic.js' data-shr-siteid='d430fa104989b8b26912eb6a1d526db9' data-cfasync='false' async='async'></script>
+
+
+    </body>
 </html>

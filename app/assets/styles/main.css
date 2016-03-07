@@ -2291,17 +2291,23 @@ ul {
 }
 .slide-1 {
   background-image: url('../images/slider/1.png');
+  height: auto; 
+  width: auto; 
+  max-width: 1920px; 
+  max-height: 1080px;
 }
 .slide-1 .slide-box,
 .slide-1 .slide-box-alt {
   margin-top: 350px;
   margin-bottom: 40px;
+  
 }
 .slide-box,
 .slide-box-alt {
   height: 450px;
   display: table;
   width: 100%;
+  
 } 
 
 .social-container {

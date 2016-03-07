@@ -587,7 +587,7 @@ class Index extends PHPFrodo
         }
         else
         {
-            $this->assign( 'noResult', '<h3>;( Nenhum imóvel encontrado!</h3><Br /><Br /><Br /><Br />' );
+            $this->assign( 'noResult', '<h3>Nenhum imóvel encontrado!</h3><Br /><Br /><Br /><Br />' );
         }
         $this->assign( 'busca', "" );
         $this->fillTipo( 1 );
