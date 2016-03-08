@@ -20,41 +20,7 @@
   opacity: 1;
   top: 0;
   margin-top: 20px;
-}
-@media screen and (max-width: 768px) {
-  #fh5co-header {
-    margin-top: 0;
-    background: #fff;
-    -webkit-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
-    -moz-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
-    -ms-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
-    box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
-  }
-  #fh5co-header .navbar-brand {
-    color: #00D56A !important;
-  }
-  #fh5co-header #navbar li a {
-    color: rgba(0, 0, 0, 0.5) !important;
-    -webkit-transition: 0.3s;
-    -o-transition: 0.3s;
-    transition: 0.3s;
-  }
-  #fh5co-header #navbar li a:hover {
-    color: #00D56A !important;
-  }
-  #fh5co-header #navbar li a span:before {
-    background: transparent !important;
-  }
-  #fh5co-header #navbar li.active a {
-    background: transparent;
-    background: none;
-    color: #00D56A !important;
-  }
-  #fh5co-header #navbar li.active a span:before {
-    visibility: visible;
-    -webkit-transform: scaleX(1);
-    transform: scaleX(1);
-  }
+  
 }
 #fh5co-header .navbar {
   padding-bottom: 0;
@@ -876,7 +842,7 @@
 .js .to-animate,
 .js .to-animate-2,
 .js .single-animate {
-  opacity: 0;
+  opacity: 1;
 }
 
 @media screen and (max-width: 480px) {
@@ -918,4 +884,40 @@
   animation-duration: .3s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
+}
+
+@media screen and (max-width: 768px) {
+  #fh5co-header {
+    margin-top: 0;
+    background: #fff;
+    -webkit-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
+    -ms-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
+  }
+  #fh5co-header .navbar-brand {
+    color: #00D56A !important;
+  }
+  #fh5co-header #navbar li a {
+    color: rgba(0, 0, 0, 0.5) !important;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+  }
+  #fh5co-header #navbar li a:hover {
+    color: #00D56A !important;
+  }
+  #fh5co-header #navbar li a span:before {
+    background: transparent !important;
+  }
+  #fh5co-header #navbar li.active a {
+    background: transparent;
+    background: none;
+    color: #00D56A !important;
+  }
+  #fh5co-header #navbar li.active a span:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
 }

@@ -28,29 +28,25 @@
   opacity: 1;
 }
 a {
-  font-family: "Source Sans Pro", Arial, sans-serif;
-  color: inherit;
-  outline: none;
-  -webkit-transition: all 0.2s ease-out;
-  -moz-transition: all 0.2s ease-out;
-  -o-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
+  color: #00D56A;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
-a:focus,
-a:hover {
-  color: #51bbe5;
-  text-decoration: underline;
-}
-a:focus {
+a:hover, a:active, a:focus {
+  color: #00D56A;
   outline: none;
-  text-decoration: none;
 }
 body {
   font-family: "Source Sans Pro", Arial, sans-serif;
-  color: #696969;
-  font-size: 14px;
-  line-height: 1.68;
-  overflow-x: hidden;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 1.8;
+  color: #777777;
+  color: #7f7f7f;
+  background: #fff;
+  height: 100%;
+  position: relative;
 }
 h1,
 h2,
